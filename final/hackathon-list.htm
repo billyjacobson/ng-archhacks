@@ -1,0 +1,16 @@
+<p class="center">{{'There are ' + $ctrl.hackathonList.length + ' hackathons'}}</p>
+
+<div>
+  <ul class="collection">
+      <li ng-repeat="hackathon in $ctrl.hackathonList"
+          class="collection-item avatar"
+          ng-click="$ctrl.viewHackathonDetails(hackathon)">
+        <img src="{{hackathon.logoUrl}}" alt="" class="circle">
+        <span class="title">{{hackathon.name}}</span>
+        <p>{{hackathon.region}}</p>
+        <span href="#!" class="secondary-content">
+            <i class="material-icons">{{'grade'.repeat(hackathon.rating)}}</i>
+        </span>
+      </li> 
+  </ul>
+</div>
