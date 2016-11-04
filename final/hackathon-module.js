@@ -93,13 +93,7 @@ hackathon.component('hackathonDetails', {
 });
 
 /*
- * Service to call our API endpoints.
- *
- *
- *
- *
- *
- * 
+ * Service to call our API endpoints. Inject this into controllers.
  */
 hackathon.service('hackathonApi', function($http) {
   this.listHackathons = function() {
